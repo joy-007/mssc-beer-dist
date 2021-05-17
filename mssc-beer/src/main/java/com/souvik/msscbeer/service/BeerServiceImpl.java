@@ -10,6 +10,7 @@ public class BeerServiceImpl implements BeerService{
 	@Override
 	public BeerDto getBeerById(int beerId) {
 	
+		System.out.println("Reached service layer");
 		BeerDto beer = new BeerDto();
 		beer.setId(beerId);
 		beer.setBeerName("Kingfisher");
