@@ -34,6 +34,8 @@ public class BeerController {
 	@PostMapping
 	public ResponseEntity<BeerDto> saveBeer(@RequestBody BeerDto beerDto){
 		
+		System.out.println("add logger");
+		
 		beerService.saveBeer(beerDto);
 		
 		return new ResponseEntity<BeerDto>(HttpStatus.CREATED);
