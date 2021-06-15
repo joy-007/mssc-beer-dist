@@ -42,7 +42,7 @@ public class BeerController {
 	}
 	
 	@PatchMapping("/{beerId}")
-	public ResponseEntity<BeerDto> updateBeer(@PathVariable("beerId") int beerId,@RequestBody BeerDto beerDto){
+	public ResponseEntity<BeerDto> updateBeerById(@PathVariable("beerId") int beerId,@RequestBody BeerDto beerDto){
 		
 		beerService.updateBeer(beerId,beerDto);
 		
