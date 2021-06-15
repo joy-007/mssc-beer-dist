@@ -15,7 +15,7 @@ public class BeerServiceImpl implements BeerService{
 		beer.setId(beerId);
 		beer.setBeerName("Kingfisher");
 		beer.setBeerStyle("Bottle");
-		beer.setUpc(100.50);
+		//beer.setUpc(100.50);
 		return beer;
 	}
 
